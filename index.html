@@ -1,0 +1,1161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lever Advisors | Strategic Finance Leadership | Jus et Ratio, Levāre</title>
+  <meta name="description" content="Strategic finance advisory — Fractional CFO, IFRS 17, Finance Transformation. Built on two decades of C-suite leadership across Asia-Pacific. Jus et Ratio, Levāre — Right and Reason, to Elevate.">
+  <meta name="keywords" content="Fractional CFO, IFRS 17, Finance Transformation, Digital Banking, Insurance, Reinsurance, Asia-Pacific, Strategic Finance, Lever Advisors">
+  <meta name="author" content="Jef R. Lacson">
+
+  <!-- Open Graph for LinkedIn / Social -->
+  <meta property="og:title" content="Lever Advisors | Strategic Finance Leadership">
+  <meta property="og:description" content="Strategic finance advisory — Fractional CFO, IFRS 17, Finance Transformation. Jus et Ratio, Levāre — Right and Reason, to Elevate.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.lever-advisors.com">
+  <meta property="og:image" content="https://www.lever-advisors.com/images/og-image.png">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Lever Advisors | Strategic Finance Leadership">
+  <meta name="twitter:description" content="Fractional CFO · IFRS 17 · Finance Transformation · Jus et Ratio, Levāre">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="images/monogram.jpeg">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Montserrat:wght@200;300;400;500;600;700;800&family=Lato:wght@100;300;400;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --navy: #1a2744;
+      --navy-deep: #0f1a30;
+      --navy-light: #253a5e;
+      --cream: #f7f4ef;
+      --cream-dark: #ebe6dd;
+      --warm: #c9b99a;
+      --warm-light: #d4c8ad;
+      --warm-muted: #8a7e6b;
+      --text-dark: #1a1a1a;
+      --text-body: #4a4a4a;
+      --text-light: #8a8578;
+      --white: #ffffff;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Lato', sans-serif;
+      color: var(--text-dark);
+      background: var(--cream);
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    /* =============== NAVIGATION =============== */
+    .nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+      background: rgba(15, 26, 48, 0.96);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      padding: 0 60px;
+      height: 68px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      transition: background 0.3s;
+    }
+
+    .nav-brand {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      text-decoration: none;
+    }
+
+    .nav-logo {
+      width: 36px;
+      height: 36px;
+      object-fit: contain;
+      filter: brightness(0) invert(1);
+    }
+
+    .nav-wordmark {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 13px;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: var(--white);
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 32px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 300;
+      font-size: 10px;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.55);
+      text-decoration: none;
+      transition: color 0.3s;
+      position: relative;
+    }
+
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      width: 0;
+      height: 1px;
+      background: var(--warm);
+      transition: width 0.3s;
+    }
+
+    .nav-links a:hover { color: var(--warm); }
+    .nav-links a:hover::after { width: 100%; }
+
+    /* Mobile menu toggle */
+    .nav-toggle {
+      display: none;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 8px;
+    }
+
+    .nav-toggle span {
+      display: block;
+      width: 22px;
+      height: 1.5px;
+      background: var(--white);
+      margin: 5px 0;
+      transition: all 0.3s;
+    }
+
+    /* =============== HERO =============== */
+    .hero {
+      min-height: 100vh;
+      background: linear-gradient(165deg, var(--navy-deep) 0%, var(--navy) 45%, var(--navy-light) 100%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 120px 40px 80px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse at 15% 50%, rgba(201, 185, 154, 0.07) 0%, transparent 55%),
+        radial-gradient(ellipse at 85% 25%, rgba(201, 185, 154, 0.04) 0%, transparent 45%),
+        radial-gradient(ellipse at 50% 90%, rgba(201, 185, 154, 0.03) 0%, transparent 40%);
+      pointer-events: none;
+    }
+
+    /* Subtle grain texture */
+    .hero::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      opacity: 0.025;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+      pointer-events: none;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero-logo {
+      width: 130px;
+      height: 130px;
+      object-fit: contain;
+      filter: brightness(0) invert(1);
+      margin-bottom: 28px;
+      animation: revealUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+      opacity: 0;
+    }
+
+    .hero-philosophy {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 400;
+      font-style: italic;
+      font-size: 15px;
+      letter-spacing: 5px;
+      color: var(--warm-muted);
+      margin-bottom: 22px;
+      animation: revealUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.15s forwards;
+      opacity: 0;
+    }
+
+    .hero-title {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 800;
+      font-size: clamp(44px, 8vw, 78px);
+      letter-spacing: 14px;
+      text-transform: uppercase;
+      color: var(--white);
+      line-height: 1.05;
+      animation: revealUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.3s forwards;
+      opacity: 0;
+    }
+
+    .hero-subtitle {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 300;
+      font-size: clamp(14px, 2.2vw, 19px);
+      letter-spacing: 10px;
+      text-transform: uppercase;
+      color: var(--warm);
+      margin-top: 6px;
+      animation: revealUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.4s forwards;
+      opacity: 0;
+    }
+
+    .hero-line {
+      width: 50px;
+      height: 1px;
+      background: var(--warm-muted);
+      margin: 44px auto;
+      animation: revealUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.5s forwards;
+      opacity: 0;
+    }
+
+    .hero-tagline {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 400;
+      font-size: clamp(18px, 2.5vw, 24px);
+      color: rgba(255,255,255,0.65);
+      max-width: 560px;
+      line-height: 1.75;
+      margin: 0 auto;
+      animation: revealUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.6s forwards;
+      opacity: 0;
+    }
+
+    .hero-buttons {
+      margin-top: 50px;
+      display: flex;
+      gap: 18px;
+      justify-content: center;
+      animation: revealUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.7s forwards;
+      opacity: 0;
+    }
+
+    .btn {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 500;
+      font-size: 10px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      padding: 16px 38px;
+      text-decoration: none;
+      transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+      display: inline-block;
+    }
+
+    .btn-gold {
+      background: var(--warm);
+      color: var(--navy-deep);
+    }
+
+    .btn-gold:hover {
+      background: var(--warm-light);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(201, 185, 154, 0.25);
+    }
+
+    .btn-outline {
+      background: transparent;
+      color: var(--warm);
+      border: 1px solid rgba(201, 185, 154, 0.3);
+    }
+
+    .btn-outline:hover {
+      border-color: var(--warm);
+      transform: translateY(-2px);
+    }
+
+    .btn-navy {
+      background: var(--navy);
+      color: var(--white);
+      border: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .btn-navy:hover {
+      background: var(--navy-light);
+      transform: translateY(-2px);
+    }
+
+    /* =============== SECTIONS =============== */
+    .section-padding {
+      padding: 130px 60px;
+    }
+
+    .container {
+      max-width: 1180px;
+      margin: 0 auto;
+    }
+
+    .label {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 300;
+      font-size: 10px;
+      letter-spacing: 5px;
+      text-transform: uppercase;
+      color: var(--warm-muted);
+      margin-bottom: 16px;
+    }
+
+    .heading {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 600;
+      font-size: clamp(30px, 4vw, 46px);
+      line-height: 1.25;
+      margin-bottom: 28px;
+    }
+
+    .heading-navy { color: var(--navy); }
+    .heading-white { color: var(--white); }
+
+    .body-text {
+      font-family: 'Lato', sans-serif;
+      font-weight: 300;
+      font-size: 16.5px;
+      line-height: 1.9;
+      color: var(--text-body);
+      max-width: 700px;
+    }
+
+    /* =============== ABOUT =============== */
+    .about {
+      background: var(--cream);
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 70px;
+      margin-top: 56px;
+      align-items: start;
+    }
+
+    .philosophy-box {
+      padding: 48px 44px;
+      background: var(--navy);
+      position: relative;
+    }
+
+    .philosophy-box::before {
+      content: '';
+      position: absolute;
+      inset: -4px;
+      border: 1px solid rgba(201, 185, 154, 0.15);
+      pointer-events: none;
+    }
+
+    .phil-item { margin-bottom: 28px; }
+    .phil-item:last-child { margin-bottom: 0; }
+
+    .phil-latin {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 600;
+      font-style: italic;
+      font-size: 26px;
+      color: var(--warm);
+      margin-bottom: 3px;
+    }
+
+    .phil-english {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 300;
+      font-size: 10px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.4);
+      margin-bottom: 10px;
+    }
+
+    .phil-desc {
+      font-family: 'Lato', sans-serif;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 1.8;
+      color: rgba(255,255,255,0.65);
+    }
+
+    .phil-line {
+      width: 36px;
+      height: 1px;
+      background: rgba(201, 185, 154, 0.2);
+      margin: 28px 0;
+    }
+
+    /* =============== SERVICES =============== */
+    .services {
+      background: var(--white);
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 36px;
+      margin-top: 56px;
+    }
+
+    .svc-card {
+      padding: 46px 34px;
+      border: 1px solid var(--cream-dark);
+      transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .svc-card::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background: var(--warm);
+      transform: scaleX(0);
+      transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+      transform-origin: left;
+    }
+
+    .svc-card:hover {
+      border-color: var(--navy);
+      transform: translateY(-5px);
+      box-shadow: 0 20px 50px rgba(26, 39, 68, 0.07);
+    }
+
+    .svc-card:hover::after { transform: scaleX(1); }
+
+    .svc-num {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 300;
+      font-size: 46px;
+      color: var(--cream-dark);
+      margin-bottom: 18px;
+      line-height: 1;
+    }
+
+    .svc-title {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 12px;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      color: var(--navy);
+      margin-bottom: 18px;
+    }
+
+    .svc-desc {
+      font-family: 'Lato', sans-serif;
+      font-weight: 300;
+      font-size: 14.5px;
+      line-height: 1.8;
+      color: var(--text-body);
+    }
+
+    .svc-verb {
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic;
+      font-size: 14px;
+      color: var(--warm-muted);
+      margin-top: 22px;
+    }
+
+    /* =============== EXPERIENCE =============== */
+    .experience {
+      background: var(--navy);
+    }
+
+    .stats-row {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 36px;
+      margin-bottom: 80px;
+    }
+
+    .stat {
+      text-align: center;
+      padding: 28px 0;
+      border-top: 1px solid rgba(201, 185, 154, 0.15);
+    }
+
+    .stat-val {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 600;
+      font-size: 50px;
+      color: var(--warm);
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+
+    .stat-lbl {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 300;
+      font-size: 9px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.45);
+    }
+
+    .creds-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 48px;
+    }
+
+    .cred-block h3 {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 600;
+      font-size: 11px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--warm);
+      margin-bottom: 18px;
+    }
+
+    .cred-list {
+      list-style: none;
+    }
+
+    .cred-list li {
+      font-family: 'Lato', sans-serif;
+      font-weight: 300;
+      font-size: 14px;
+      color: rgba(255,255,255,0.65);
+      padding: 8px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+    }
+
+    /* =============== APPROACH =============== */
+    .approach {
+      background: var(--cream);
+    }
+
+    .steps-row {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 28px;
+      margin-top: 56px;
+    }
+
+    .step {
+      padding: 38px 26px;
+      background: var(--white);
+      border-bottom: 2px solid var(--cream-dark);
+      transition: all 0.35s;
+    }
+
+    .step:hover { border-color: var(--navy); transform: translateY(-3px); }
+
+    .step-n {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 300;
+      font-size: 34px;
+      color: var(--warm);
+      margin-bottom: 14px;
+    }
+
+    .step-h {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 600;
+      font-size: 11px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--navy);
+      margin-bottom: 14px;
+    }
+
+    .step-p {
+      font-family: 'Lato', sans-serif;
+      font-weight: 300;
+      font-size: 13.5px;
+      line-height: 1.75;
+      color: var(--text-body);
+    }
+
+    /* =============== FOUNDER =============== */
+    .founder {
+      background: var(--white);
+    }
+
+    .founder-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.5fr;
+      gap: 70px;
+      align-items: start;
+    }
+
+    .founder-card {
+      background: var(--navy);
+      padding: 48px 38px;
+    }
+
+    .founder-name {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 600;
+      font-size: 30px;
+      color: var(--white);
+      margin-bottom: 4px;
+    }
+
+    .founder-role {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 300;
+      font-size: 10px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--warm);
+      margin-bottom: 26px;
+    }
+
+    .founder-bio {
+      font-family: 'Lato', sans-serif;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 1.8;
+      color: rgba(255,255,255,0.65);
+      margin-bottom: 24px;
+    }
+
+    .badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+      margin-top: 22px;
+    }
+
+    .badge {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 500;
+      font-size: 8.5px;
+      letter-spacing: 1px;
+      padding: 5px 11px;
+      border: 1px solid rgba(201, 185, 154, 0.3);
+      color: var(--warm);
+    }
+
+    .founder-links {
+      margin-top: 28px;
+      padding-top: 20px;
+      border-top: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .founder-links a {
+      font-family: 'Lato', sans-serif;
+      font-weight: 300;
+      font-size: 13px;
+      color: rgba(255,255,255,0.5);
+      text-decoration: none;
+      display: block;
+      padding: 4px 0;
+      transition: color 0.3s;
+    }
+
+    .founder-links a:hover { color: var(--warm); }
+
+    .founder-quote {
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic;
+      font-size: 20px;
+      line-height: 1.7;
+      color: var(--warm-muted);
+      margin-top: 36px;
+      padding-left: 24px;
+      border-left: 2px solid var(--cream-dark);
+    }
+
+    /* =============== CTA =============== */
+    .cta {
+      background: linear-gradient(165deg, var(--navy-deep), var(--navy));
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .cta::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at 50% 50%, rgba(201, 185, 154, 0.05) 0%, transparent 60%);
+      pointer-events: none;
+    }
+
+    .cta-inner {
+      max-width: 650px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 1;
+    }
+
+    .cta-heading {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 600;
+      font-size: clamp(26px, 3.5vw, 40px);
+      color: var(--white);
+      line-height: 1.35;
+      margin-bottom: 18px;
+    }
+
+    .cta-text {
+      font-family: 'Lato', sans-serif;
+      font-weight: 300;
+      font-size: 15.5px;
+      color: rgba(255,255,255,0.55);
+      line-height: 1.8;
+      margin-bottom: 40px;
+    }
+
+    .cta-email {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 400;
+      font-size: 13px;
+      letter-spacing: 2px;
+      color: rgba(255,255,255,0.4);
+      margin-top: 24px;
+    }
+
+    .cta-email a {
+      color: var(--warm);
+      text-decoration: none;
+    }
+
+    /* =============== FOOTER =============== */
+    .footer {
+      background: var(--navy-deep);
+      padding: 56px 60px;
+    }
+
+    .footer-inner {
+      max-width: 1180px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .footer-left {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .footer-brand {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 11px;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: var(--white);
+    }
+
+    .footer-phil {
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic;
+      font-size: 13px;
+      color: var(--warm-muted);
+      letter-spacing: 2px;
+    }
+
+    .footer-right {
+      font-family: 'Lato', sans-serif;
+      font-weight: 300;
+      font-size: 11px;
+      color: rgba(255,255,255,0.25);
+      text-align: right;
+      line-height: 1.9;
+    }
+
+    .footer-right a {
+      color: rgba(255,255,255,0.4);
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .footer-right a:hover { color: var(--warm); }
+
+    /* =============== ANIMATIONS =============== */
+    @keyframes revealUp {
+      from { opacity: 0; transform: translateY(24px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Scroll reveal */
+    .reveal {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* =============== RESPONSIVE =============== */
+    @media (max-width: 960px) {
+      .nav { padding: 0 24px; }
+      .nav-links { display: none; }
+      .nav-toggle { display: block; }
+      .section-padding { padding: 80px 24px; }
+      .about-grid { grid-template-columns: 1fr; gap: 40px; }
+      .services-grid { grid-template-columns: 1fr; }
+      .stats-row { grid-template-columns: repeat(2, 1fr); }
+      .creds-grid { grid-template-columns: 1fr; }
+      .steps-row { grid-template-columns: 1fr 1fr; }
+      .founder-grid { grid-template-columns: 1fr; }
+      .footer-inner { flex-direction: column; gap: 28px; text-align: center; }
+      .footer-right { text-align: center; }
+      .hero { padding: 100px 24px 60px; }
+      .hero-buttons { flex-direction: column; align-items: center; }
+    }
+
+    @media (max-width: 600px) {
+      .steps-row { grid-template-columns: 1fr; }
+      .stats-row { grid-template-columns: 1fr 1fr; gap: 20px; }
+      .hero-title { letter-spacing: 8px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ===== NAV ===== -->
+<nav class="nav" id="navbar">
+  <a href="#" class="nav-brand">
+    <img src="images/logo.png" class="nav-logo" alt="Lever Advisors">
+    <span class="nav-wordmark">Lever Advisors</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#approach">Approach</a></li>
+    <li><a href="#founder">Founder</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <button class="nav-toggle" aria-label="Menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- ===== HERO ===== -->
+<section class="hero" id="home">
+  <div class="hero-content">
+    <img src="images/logo.png" class="hero-logo" alt="Lever Advisors — JRL Monogram">
+    <div class="hero-philosophy">Jus et Ratio, Levāre.</div>
+    <h1 class="hero-title">LEVER</h1>
+    <div class="hero-subtitle">Advisors</div>
+    <div class="hero-line"></div>
+    <p class="hero-tagline">Strategic finance leadership that creates disproportionate impact. Right and Reason, to Elevate.</p>
+    <div class="hero-buttons">
+      <a href="#contact" class="btn btn-gold">Start a Conversation</a>
+      <a href="#services" class="btn btn-outline">Our Services</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section class="section-padding about" id="about">
+  <div class="container">
+    <div class="label reveal">About</div>
+    <h2 class="heading heading-navy reveal">Organizations don't need more consultants.<br>They need the right lever.</h2>
+    <div class="about-grid">
+      <div>
+        <p class="body-text reveal">
+          Lever Advisors provides strategic finance leadership to organizations navigating complexity — from digital banking transformation to IFRS 17 implementation to building finance functions that drive growth, not just report on it.
+        </p>
+        <br>
+        <p class="body-text reveal">
+          We don't observe from the sideline. We step in, lead, and elevate. Built on two decades of C-suite finance experience across banking, insurance, and reinsurance in Asia-Pacific, we bring senior judgment to every engagement — applied precisely where it creates the most impact.
+        </p>
+        <br>
+        <p class="body-text reveal">
+          A lever is the simplest force multiplier in physics. Precise force, applied at the right point, creates disproportionate impact. That's our model. That's our name. That's what we do.
+        </p>
+      </div>
+      <div class="philosophy-box reveal">
+        <div class="phil-item">
+          <div class="phil-latin">Jus</div>
+          <div class="phil-english">Right &middot; Justice</div>
+          <div class="phil-desc">Every engagement guided by what is correct, not what is convenient. The Stoic commitment to ethical leadership in finance.</div>
+        </div>
+        <div class="phil-line"></div>
+        <div class="phil-item">
+          <div class="phil-latin">Ratio</div>
+          <div class="phil-english">Reason &middot; Method</div>
+          <div class="phil-desc">Every recommendation measured, deliberate, and defensible. The discipline of a leader who knows the balance sheet always tells the truth.</div>
+        </div>
+        <div class="phil-line"></div>
+        <div class="phil-item">
+          <div class="phil-latin">Levāre</div>
+          <div class="phil-english">To Elevate &middot; To Lift</div>
+          <div class="phil-desc">The purpose behind the judgment and the method. We don't advise for the sake of advising. We elevate organizations, finance functions, and leaders to where they should be.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SERVICES ===== -->
+<section class="section-padding services" id="services">
+  <div class="container">
+    <div class="label reveal">Services</div>
+    <h2 class="heading heading-navy reveal">Three levers. One purpose.</h2>
+    <p class="body-text reveal">Each engagement applies senior finance leadership at the exact point of greatest impact.</p>
+    <div class="services-grid">
+      <div class="svc-card reveal">
+        <div class="svc-num">01</div>
+        <div class="svc-title">Fractional CFO</div>
+        <div class="svc-desc">Senior finance leadership for fintechs, digital banks, and growth-stage companies that need a strategic CFO now — not after the next funding round. We step into the finance leadership seat, build the function, establish governance, and deliver board-ready reporting.</div>
+        <div class="svc-verb">Levāre — we elevate the finance function.</div>
+      </div>
+      <div class="svc-card reveal">
+        <div class="svc-num">02</div>
+        <div class="svc-title">IFRS 17 Advisory</div>
+        <div class="svc-desc">Implementation, remediation, and optimization for insurers and reinsurers navigating the most significant change in insurance accounting in a generation. Hands-on experience leading IFRS 17 programs across multiple Asian markets, from gap analysis to BAU transition.</div>
+        <div class="svc-verb">Levāre — we elevate the implementation.</div>
+      </div>
+      <div class="svc-card reveal">
+        <div class="svc-num">03</div>
+        <div class="svc-title">Finance Transformation</div>
+        <div class="svc-desc">We redesign finance functions from the ground up — turning back-office cost centers into strategic levers for growth, capital efficiency, and board-level decision-making. From system selection to process redesign to team capability building.</div>
+        <div class="svc-verb">Levāre — we elevate the organization.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== EXPERIENCE ===== -->
+<section class="section-padding experience" id="experience">
+  <div class="container">
+    <div class="label reveal" style="color: var(--warm-muted);">Experience</div>
+    <h2 class="heading heading-white reveal">Two decades of strategic finance leadership.</h2>
+
+    <div class="stats-row reveal">
+      <div class="stat">
+        <div class="stat-val">20+</div>
+        <div class="stat-lbl">Years in Financial Services</div>
+      </div>
+      <div class="stat">
+        <div class="stat-val">25+</div>
+        <div class="stat-lbl">Countries Covered</div>
+      </div>
+      <div class="stat">
+        <div class="stat-val">4</div>
+        <div class="stat-lbl">CFO Appointments</div>
+      </div>
+      <div class="stat">
+        <div class="stat-val">3</div>
+        <div class="stat-lbl">Industries Transformed</div>
+      </div>
+    </div>
+
+    <div class="creds-grid">
+      <div class="cred-block reveal">
+        <h3>Sectors</h3>
+        <ul class="cred-list">
+          <li>Digital Banking &amp; Fintech</li>
+          <li>General Insurance</li>
+          <li>Reinsurance</li>
+          <li>Risk &amp; Technology Advisory</li>
+        </ul>
+      </div>
+      <div class="cred-block reveal">
+        <h3>Domains</h3>
+        <ul class="cred-list">
+          <li>IFRS 17 Implementation &amp; Remediation</li>
+          <li>Finance Function Transformation</li>
+          <li>Digital Banking Unit Economics</li>
+          <li>Capital &amp; Risk Management</li>
+        </ul>
+      </div>
+      <div class="cred-block reveal">
+        <h3>Credentials</h3>
+        <ul class="cred-list">
+          <li>Certified Public Accountant (CPA)</li>
+          <li>Certified Information Systems Auditor (CISA)</li>
+          <li>Certified Internal Auditor (CIA)</li>
+          <li>ASEAN CPA</li>
+          <li>Fellow, Institute of Corporate Directors (FICD)</li>
+        </ul>
+      </div>
+      <div class="cred-block reveal">
+        <h3>Recognition</h3>
+        <ul class="cred-list">
+          <li>2026 Asia-Pacific Stevie Gold Award — Innovative Achievement in Finance</li>
+          <li>Keynote speaker — BankTech Asia, Asian Banking &amp; Finance, FutureCFO, DigitalCFO Asia</li>
+          <li>Published thought leadership on digital banking, IFRS 17, and the evolving CFO role</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== APPROACH ===== -->
+<section class="section-padding approach" id="approach">
+  <div class="container">
+    <div class="label reveal">Approach</div>
+    <h2 class="heading heading-navy reveal">Precise force at the right point.</h2>
+    <p class="body-text reveal">Every engagement follows the same disciplined framework — designed to create maximum impact with minimum disruption.</p>
+
+    <div class="steps-row">
+      <div class="step reveal">
+        <div class="step-n">I</div>
+        <div class="step-h">Diagnose</div>
+        <div class="step-p">We assess the current state with the eyes of a CFO, not a consultant. Where is the real constraint? What does the balance sheet actually say? We find the fulcrum — the single point where applied force creates the most leverage.</div>
+      </div>
+      <div class="step reveal">
+        <div class="step-n">II</div>
+        <div class="step-h">Design</div>
+        <div class="step-p">We architect the solution — not a generic framework, but a strategy built for your specific organization, culture, regulatory environment, and stage of maturity. Every recommendation is defensible and measurable.</div>
+      </div>
+      <div class="step reveal">
+        <div class="step-n">III</div>
+        <div class="step-h">Deliver</div>
+        <div class="step-p">We don't hand off a slide deck. We step in and execute alongside your team. Finance transformation, IFRS 17 implementation, board reporting — we lead the work, not just the thinking.</div>
+      </div>
+      <div class="step reveal">
+        <div class="step-n">IV</div>
+        <div class="step-h">Elevate</div>
+        <div class="step-p">We build capability, not dependency. Every engagement ends with your team stronger, your function more capable, and your organization elevated. That's Levāre — to lift and leave you higher than we found you.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOUNDER ===== -->
+<section class="section-padding founder" id="founder">
+  <div class="container">
+    <div class="founder-grid">
+      <div>
+        <div class="founder-card reveal">
+          <div class="founder-name">Jef R. Lacson</div>
+          <div class="founder-role">Founder &amp; Managing Advisor</div>
+          <div class="founder-bio">A finance executive with two decades of leadership across digital banking, insurance, and reinsurance in Asia-Pacific. Four CFO appointments. IFRS 17 programs spanning multiple markets. A career built on walking into complexity and leading organizations out of it.</div>
+          <div class="founder-bio">Named his firm after the Latin verb Levāre — to elevate — because that's what he's always done: lift finance functions from compliance to strategy, lift organizations from opacity to clarity, lift leaders from uncertainty to conviction.</div>
+          <div class="badges">
+            <span class="badge">CPA</span>
+            <span class="badge">CISA</span>
+            <span class="badge">CIA</span>
+            <span class="badge">ASEAN CPA</span>
+            <span class="badge">FICD</span>
+          </div>
+          <div class="founder-links">
+            <a href="mailto:jef@lacson.co">jef@lacson.co</a>
+            <a href="https://jrlacson.com" target="_blank">jrlacson.com</a>
+            <a href="https://www.linkedin.com/in/jrlacson" target="_blank">linkedin.com/in/jrlacson</a>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="label reveal">Founder</div>
+        <h2 class="heading heading-navy reveal">Someone has to lead.<br>That's why I built this firm.</h2>
+        <p class="body-text reveal">
+          I've spent twenty years inside financial services — starting in risk and technology advisory at KPMG, leading the first SAP Reinsurance Module implementation in Southeast Asia, then moving through senior finance and audit leadership roles at National Reinsurance Corporation, QBE, AIG Philippines, Pacific Cross International, and most recently as CFO of UnionDigital Bank.
+        </p>
+        <br>
+        <p class="body-text reveal">
+          Every role taught me the same lesson: organizations don't lack strategy. They lack someone willing to lead through complexity without flinching. Someone who reads the balance sheet honestly, makes the hard call, and stays until it's done.
+        </p>
+        <br>
+        <p class="body-text reveal">
+          Lever Advisors exists because I've been that person inside organizations for two decades. Now I bring that same leadership — the same judgment, the same rigor, the same unwillingness to look away from hard truths — to organizations that need it on their terms.
+        </p>
+        <div class="founder-quote reveal">
+          "Growth without unit economics is just delayed losses. The balance sheet always tells the truth."
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CTA ===== -->
+<section class="section-padding cta" id="contact">
+  <div class="cta-inner">
+    <div class="label reveal" style="color: var(--warm-muted);">Contact</div>
+    <h2 class="cta-heading reveal">Ready to find the right lever?</h2>
+    <p class="cta-text reveal">Every engagement begins with a conversation. Tell us where you are, where you need to be, and we'll identify the point of greatest leverage.</p>
+    <a href="mailto:jef@lacson.co" class="btn btn-gold reveal">jef@lacson.co</a>
+    <div class="cta-email reveal">
+      <a href="https://www.linkedin.com/company/lever-advisors" target="_blank">LinkedIn</a> &nbsp;&middot;&nbsp;
+      <a href="https://jrlacson.com" target="_blank">jrlacson.com</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-left">
+      <div class="footer-brand">Lever Advisors</div>
+      <div class="footer-phil">Jus et Ratio, Levāre.</div>
+    </div>
+    <div class="footer-right">
+      Right and Reason, to Elevate.<br>
+      &copy; 2026 Lever Advisors. All rights reserved.<br>
+      Manila, Philippines<br>
+      <a href="mailto:jef@lacson.co">jef@lacson.co</a>
+    </div>
+  </div>
+</footer>
+
+<!-- ===== SCROLL REVEAL SCRIPT ===== -->
+<script>
+  // Intersection Observer for scroll reveal
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry, index) => {
+      if (entry.isIntersecting) {
+        // Stagger the reveal
+        setTimeout(() => {
+          entry.target.classList.add('visible');
+        }, index * 80);
+        observer.unobserve(entry.target);
+      }
+    });
+  }, {
+    threshold: 0.1,
+    rootMargin: '0px 0px -40px 0px'
+  });
+
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+  // Navbar background on scroll
+  window.addEventListener('scroll', () => {
+    const nav = document.getElementById('navbar');
+    if (window.scrollY > 80) {
+      nav.style.background = 'rgba(15, 26, 48, 0.99)';
+      nav.style.boxShadow = '0 2px 20px rgba(0,0,0,0.2)';
+    } else {
+      nav.style.background = 'rgba(15, 26, 48, 0.96)';
+      nav.style.boxShadow = 'none';
+    }
+  });
+</script>
+
+</body>
+</html>
